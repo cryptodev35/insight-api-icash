@@ -52,7 +52,7 @@ exports.index = function(req, res) {
   if (cryptsyRate === 0 || currentTime >= (timestamp + delay)) {
     timestamp = currentTime;
 
-    _request('https://api.cryptsy.com/api/v2/markets/213', function(err, data) {
+    _request('https://yobit.net/api/3/trades/icash_btc', function(err, data) {
       if (!err) cryptsyRate = parseFloat(JSON.parse(data).data.last_trade.price);
     });
   }
