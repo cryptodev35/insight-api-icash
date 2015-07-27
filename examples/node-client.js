@@ -1,6 +1,6 @@
 var io = require('socket.io-client');
 
-var bitcore = require('darkcore');
+var bitcore = require('bitcore-icash');
 var util = bitcore.util;
 var Key = bitcore.Key;
 var AuthMessage = bitcore.AuthMessage;
