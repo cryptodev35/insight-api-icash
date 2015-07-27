@@ -2,7 +2,7 @@
 //var imports       = require('soop').imports();
 
 var async     = require('async');
-var bitcore   = require('darkcore');
+var bitcore   = require('bitcore-icash');
 var RpcClient = bitcore.RpcClient;
 var config    = require('../../config/config');
 var rpc       = new RpcClient(config.bitcoind);
